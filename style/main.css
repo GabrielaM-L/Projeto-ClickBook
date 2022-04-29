@@ -1,0 +1,95 @@
+/*Declaração de variáveis com as cores padrão*/
+:root {
+    --azul: #70DCFF;
+    --cinza: #343A40;
+}
+
+/* Reset de configurações padrão*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base*/
+body {
+    background: var(--cinza);
+    font-family: 'Arial', Times, serif;
+    color: white;
+
+}
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+header .logo {
+    margin-left: 5px;
+    color: var(--azul);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover {
+    color: #fff;
+}
+
+/* Livro principal*/
+.livro-principal {
+    font-size: 16px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/torto_arado.webp);
+    background-size: cover;
+}
+.livro-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.livro-principal .titulo {
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botao {
+    background-color: rgba(0,0,0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+.botao i {
+    margin-right: 8px;
+}
+.container {
+    margin-left: 20px;
+}
+.livro-principal .container {
+    width: 70%;
+}
+.box-livro {
+    display: block;
+    cursor: pointer;
+    height: 450px;
+    width: 100px;
+}
+.carrossel-livros {
+    margin-top: 10px;
+}
+
